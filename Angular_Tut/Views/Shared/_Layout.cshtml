@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    @RenderSection("Styles", required: false)
+
+</head>
+
+<body>
+    <div class="content">
+        @RenderBody()
+    </div>
+
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+
+    <script src="~/app/Scripts/Mins/app.min.js"></script>
+
+</body>
+</html>
