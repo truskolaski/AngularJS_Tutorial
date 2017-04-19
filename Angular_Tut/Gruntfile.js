@@ -7,18 +7,31 @@
     grunt.initConfig({
         uglify: {
             out: {
-                files: { 'app/Scripts/Mins/app.min.js': ['app/Scripts/app.js'] }
+                files:
+                    {
+                        'app/app.bundle.min.js':
+                            [
+                                'Scripts/jquery-3.1.1.min.js',
+                                'Scripts/bootstrap.min.js',
+                                'Scripts/angular.min.js',
+
+                                'app/**/*.module.js',
+                                'app/phone-list/phone-list.component.js'
+                            ]
+                    }
             },
         },
 
         watch: {
             scripts: {
-                files: ['app/Scripts/**/*.js', "app/Scripts/app.js"],
+                files: ['app/app.module.js', 'app/phone-list/*.js'],
                 tasks: ['uglify']
-            } 
+            }
         }
     });
 
     // define tasks
     grunt.registerTask('default', ['uglify', 'watch']);
+    grunt.registerTask('watchFiles', ['watch']);
+    grunt.registerTask('uglifyFiles', ['uglify']);
 };

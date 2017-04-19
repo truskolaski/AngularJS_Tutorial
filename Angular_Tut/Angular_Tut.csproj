@@ -89,8 +89,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\Scripts\app.js" />
-    <Content Include="app\Scripts\Mins\app.min.js" />
+    <Content Include="app\app.bundle.min.js" />
+    <Content Include="app\app.module.js" />
+    <Content Include="app\phone-list\phone-list.component.js" />
+    <Content Include="app\phone-list\phone-list.module.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -98,7 +100,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Gruntfile.js" />
-    <Content Include="package.json" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
@@ -112,6 +113,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="package.json" />
+    <Content Include="app\phone-list\phone-list.template.html" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -144,7 +147,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\Styles\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
