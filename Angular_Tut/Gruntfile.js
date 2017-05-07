@@ -15,8 +15,7 @@
                                 'Scripts/bootstrap.min.js',
                                 'Scripts/angular.min.js',
 
-                                'app/**/*.module.js',
-                                'app/phone-list/phone-list.component.js'
+                                'app/**/*.js',
                             ]
                     }
             },
@@ -24,9 +23,9 @@
 
         watch: {
             scripts: {
-                files: ['app/app.module.js', 'app/phone-list/*.js'],
+                files: ['app/**/*.js'],
                 tasks: ['uglify']
-            } 
+            }
         }
     });
 

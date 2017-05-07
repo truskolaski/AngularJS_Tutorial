@@ -3,8 +3,21 @@
     ViewBag.Title = "IndexHome";
 }
 
-<div class="container-fluid" ng-app="phonecatApp">
+<div class="container-fluid" ng-app="appModule" ng-controller="mainController">
 
-    <greet-user></greet-user>
+    <form name="mainForm">
+        Name: <input name="nameTxtField" type="text" ng-model="name" required />
 
+        <br />
+
+        <div ng-show="mainForm.nameTxtField.$touched">
+            <div ng-show="mainForm.nameTxtField.$error.required">Tell us your name.</div>
+        </div>
+
+    </form>
+
+    <div ng-show="mainForm.nameTxtField.$error.required">
+        Name required
     </div>
+
+</div>
