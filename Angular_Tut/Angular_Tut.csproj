@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.bundle.min.js" />
+    <Content Include="app\app.config.js" />
     <Content Include="app\app.module.js" />
     <Content Include="app\phone-list\phone-list.component.js" />
     <Content Include="app\phone-list\phone-list.module.js" />
@@ -101,6 +102,8 @@
     <Content Include="Global.asax" />
     <Content Include="Gruntfile.js" />
     <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -115,6 +118,9 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="package.json" />
     <Content Include="app\phone-list\phone-list.template.html" />
+    <Content Include="app\phone-list\phone-list.json" />
+    <Content Include="Scripts\angular-route.min.js.map" />
+    <Content Include="app\app.bundle.min.js.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />

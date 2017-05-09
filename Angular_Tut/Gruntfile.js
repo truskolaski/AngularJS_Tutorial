@@ -7,16 +7,21 @@
     grunt.initConfig({
         uglify: {
             out: {
+                options: {
+                    sourceMap: true,
+                },
                 files:
                     {
                         'app/app.bundle.min.js':
                             [
-                                'Scripts/jquery-3.1.1.min.js',
-                                'Scripts/bootstrap.min.js',
-                                'Scripts/angular.min.js',
-
+                                'Scripts/jquery-3.1.1.js',
+                                'Scripts/bootstrap.js',
+                                'Scripts/angular.js',
+                                'Scripts/angular-route.js',
                                 'app/**/*.module.js',
-                                'app/phone-list/phone-list.component.js'
+                                'app/app.config.js',
+
+                                'app/phone-list/phone-list.component.js',
                             ]
                     }
             },
@@ -24,7 +29,7 @@
 
         watch: {
             scripts: {
-                files: ['app/app.module.js', 'app/phone-list/*.js'],
+                files: ['app/app.module.js', 'app/app.config.js', 'app/phone-list/*.js'],
                 tasks: ['uglify']
             }
         }
