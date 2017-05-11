@@ -21,7 +21,7 @@
                                 'app/**/*.module.js',
                                 'app/app.config.js',
 
-                                'app/phone-list/phone-list.component.js',
+                                'app/**/*.js',
                             ]
                     }
             },
@@ -29,7 +29,7 @@
 
         watch: {
             scripts: {
-                files: ['app/app.module.js', 'app/app.config.js', 'app/phone-list/*.js'],
+                files: ['app/app.module.js', 'app/phone-list/*.js'],
                 tasks: ['uglify']
             }
         }
